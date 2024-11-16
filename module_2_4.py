@@ -11,6 +11,7 @@ for i_num in numbers[1:]:
           if is_prime is False:
               not_primes.append(i_num)
               break
+
        if i_num % j_num == 0 and i_num == j_num:
            is_prime = True
            if is_prime is True:
