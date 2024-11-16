@@ -1,10 +1,16 @@
+# В случае передачи аргумента со значением 0 или меньше, будет возвращаться пустой список.
+
 def get_matrix(n, m, value):
     matrix = []
-    for i_num in range(n):
-        list_1 = []
-        matrix.append(list_1)
-        for j_num in range(m):
-            list_1.append(value)
+
+    if n <= 0 or m <= 0 or value <= 0:
+        return matrix
+    else:
+        for i_num in range(n):
+            list_1 = []
+            matrix.append(list_1)
+            for j_num in range(m):
+                list_1.append(value)
     return matrix
 
 
