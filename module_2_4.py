@@ -1,8 +1,10 @@
 import random
 
-numbers = [9, 10, 11, 12, 13, 14, 15, 1, 2, 3, 4, 5, 6, 7, 8, 99, 101]
-
-random.shuffle(numbers)
+numbers =[]
+# numbers = [9, 10, 11, 12, 13, 14, 15, 1, 2, 3, 4, 5, 6, 7, 8, 99, 101]
+for r_num in range(10):
+    numbers.append(random.randint(1, 100))
+# random.shuffle(numbers)
 
 primes = []
 not_primes = []
