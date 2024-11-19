@@ -1,6 +1,6 @@
 import random
 
-numbers = [9, 10, 11, 12, 13, 14, 15, 1, 2, 3, 4, 5, 6, 7, 8]
+numbers = [9, 10, 11, 12, 13, 14, 15, 1, 2, 3, 4, 5, 6, 7, 8, 99, 101]
 
 random.shuffle(numbers)
 
@@ -16,8 +16,8 @@ for i_num in numbers:
         for j_num in range(2, int(i_num // 2 + 1)):
             if (i_num % j_num == 0):
                 count += 1
-
-        if (count <= 0):
+                break
+        if (count == 0):
             is_prime = True
         else:
             is_prime = False
