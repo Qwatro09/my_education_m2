@@ -19,6 +19,7 @@ for i_num in numbers:
     if is_prime == True and i_num != 1:
         primes.append(i_num)
 
+
 print(f'Список: {numbers}')
 print(f'Primes: {primes}')
 print(f'Not Primes: {not_primes}')
